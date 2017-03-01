@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Traffic light</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td class="upperLeftLight">
+          <div class="vertLight">
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+
+          </div>
+        </td>
+        <td>
+          <table class="vertical top">
+            <tr>
+              <td></td>
+              <td class="middle down"></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+        <td class="upperRightLight">
+          <div class="horizLight">
+
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table class="horizontal left">
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="middle right"></td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+        <td id="intersection"></td>
+        <td>
+          <table class="horizontal right">
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="middle left"><span>|</span></td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="lowerLeftLight">
+          <div class="horizLight">
+            <div class="green"></div>
+            <div class="yellow"></div>
+            <div class="red"></div>
+          </div>
+        </td>
+        <td>
+          <table class="vertical bottom">
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="middle bottom"></td>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+        <td class="lowerRightLight">
+          <div class="vertLight">
+            <div class="green"></div>
+            <div class="yellow"></div>
+            <div class="red"></div>
+          </div>
+        </td>
+      </tr>
+
+    </table>
+    <br>
+    <br>
+  </body>
+  <script src="./index.js"></script>
+</html>
+
+
+

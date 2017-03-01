@@ -1,0 +1,80 @@
+.horizLight,
+.vertLight {
+  border: 2px solid #000;
+  text-align: center;
+  position: relative;
+  display: inherit;
+}
+
+.green,
+.red,
+.yellow {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 100%;
+}
+
+.vertLight>.green,
+.vertLight>.red,
+.vertLight>.yellow {
+  display: inline-block;
+}
+
+.eastCar,
+.northCar,
+.southCar,
+.westCar {
+  background-color: #00f;
+  position: absolute;
+  display: inline-block;
+}
+
+.eastCar,
+.westCar {
+  height: 20px;
+  width: 30px;
+}
+
+.northCar,
+.southCar {
+  height: 30px;
+  width: 20px
+}
+
+td {
+  width: 300px;
+  height: 75px;
+}
+
+.horizontal td,
+.vertical td {
+  border: 5px solid #000;
+}
+
+.vertical td {
+  height: 300px;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.horizontal td,
+.middle.down,
+td.lowerLeftLight,
+td.lowerRightLight {
+  vertical-align: top;
+}
+
+.horizontal.right .middle.left {
+  text-align: right;
+}
+
+td.upperLeftLight,
+td.upperRightLight {
+  vertical-align: bottom;
+}
+
+td.lowerLeftLight,
+td.upperLeftLight {
+  text-align: -webkit-right;
+}
