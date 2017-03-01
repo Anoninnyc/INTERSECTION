@@ -14,7 +14,7 @@ Using jQuery, I:
 
 # How I would approach the remaining tasks:
 
-* Currently, there are no cars turning left or right. To handle left-turning cars, I would simply create a signal with a “state” that’s contingent on that of other lights, similar to how the two main lights currently operate (changing in tandem with one another). A car turning left might, toward the middle of the intersection, change classeses and become an westbound “westCar”, for example.
-* Right turns would work similarly, though with less restrictions.
-* In order to ensure lights are kept red if there are no cars waiting, I would create ‘hot-zones’, covering ~100px of road before any intersection. I would use the running setInterval to poll for whether there are any cars in these spaces. If there are no cars, I wouldn’t change the lights’ colors.
+* Currently, there are no cars turning left or right. To handle left-turning cars, I would simply create a signal with a “state” that’s contingent on that of other lights, similar to how the two main lights currently operate (changing in tandem with one another). A car turning left might, toward the middle of the intersection, change classeses and become a westbound “westCar”, for example.
+* Right turns would work similarly, though with fewer restrictions.
+* In order to ensure lights remain red if there are no cars waiting, I would create ‘hot-zones’, covering ~100px of road before any intersection. I would use the running setInterval to poll for whether there are any cars in these spaces. If there are no cars, I wouldn’t change the lights’ colors.
 * Similarly, for a proposed crosswalk, I would pause the appropriate lights for ~2 seconds or so.
